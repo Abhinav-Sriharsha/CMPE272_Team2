@@ -81,3 +81,54 @@ The project is deployed on **AWS**. The machine learning model is hosted via a *
 Ensure that these links are correctly used for accessing the frontend and the backend of the system.
 
 ![Architecture Diagram](architecture_diagram.png)
+
+## Accessing the Website
+
+You can access the deployed version of the website by visiting:  
+**[http://3.22.68.191](http://3.22.68.191)**
+
+---
+
+## Running the Project Locally
+
+To run the project on your local machine, follow these steps:
+
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+- Python (3.8 or later)
+- Node.js (14.x or later)
+- npm (Node Package Manager)
+
+### Instructions
+
+1. **Clone the Repository**  
+   Clone the repository to your local machine:
+   ```bash
+   git clone <your-repository-url>
+   cd <repository-folder>
+
+2. **Set Up the Backend Server**
+   Navigate to the folder containing app.py and run the server:
+   ```bash
+   index.py
+
+3. **Set up the Frontend**
+   ```bash
+   cd Website
+
+   ```bash
+   cd Client
+
+   ```bash
+   npm install
+
+   ```bash
+   npm run dev
+   
+4. ** Access the website locally**
+   Open your browser and navigate to the URL displayed in the terminal (typically http://localhost:3000).
+
+** Additional Instructions **
+	•	Ensure the backend server is running before starting the frontend.
+	•	If you encounter any issues, check the logs for detailed error messages.
