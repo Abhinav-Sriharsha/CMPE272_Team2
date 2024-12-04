@@ -105,8 +105,8 @@ Ensure you have the following installed on your machine:
 1. **Clone the Repository**  
    Clone the repository to your local machine:
    ```bash
-   git clone <your-repository-url>
-   cd <repository-folder>
+   git clone https://github.com/Abhinav-Sriharsha/CMPE272_Team2.git
+   cd CMPE272_Team2
 
 2. **Set Up the Backend Server**
    Navigate to the folder containing app.py and run the server:
