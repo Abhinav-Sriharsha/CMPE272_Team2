@@ -79,3 +79,5 @@ The project is deployed on **AWS**. The machine learning model is hosted via a *
 - **Backend (Flask Server)**: [http://3.145.167.93:3000/](http://3.145.167.93:3000/)
 
 Ensure that these links are correctly used for accessing the frontend and the backend of the system.
+
+![Architecture Diagram](architecture_diagram.png)
