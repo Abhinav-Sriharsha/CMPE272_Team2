@@ -131,10 +131,7 @@ Ensure you have the following installed on your machine:
 4. ** Access the website locally**
    Open your browser and navigate to the URL displayed in the terminal (typically http://localhost:3000).
 
-** Additional Instructions **
-	•	Ensure the backend server is running before starting the frontend.
-	•	If you encounter any issues, check the logs for detailed error messages.
-=======
-=======
->>>>>>> 5643179 (Initial commit for fraud detection project)
->>>>>>> 6079e30 (Initial commit for fraud detection project)
+**Additional Instructions :**
+Ensure the backend server is running before starting the frontend.
+If you encounter any issues, check the logs for detailed error messages.
+
