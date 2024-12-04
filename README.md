@@ -1,55 +1,81 @@
-# CMPE272_Team2
-### Project Topic : Enterprise Expense Fraud Detection System
+# Bank Account Fraud Detection
 
+## Project Title: Bank Account Fraud Detection System
 
+### Project Description
 
-## Tech Stack
-FrontEnd : HTML , CSS , Javascript.
+This project aims to build a **Bank Account Fraud Detection System** that utilizes machine learning algorithms to identify fraudulent transactions in real-time. By leveraging historical transaction data and customer information, the system classifies transactions as either fraudulent or legitimate. The primary objective of this system is to help financial institutions detect and prevent fraud, improving security and trust in banking systems.
 
-Backend : Python, Flask, NumPy, Pandas, and Scikit-learn
+The system uses state-of-the-art machine learning models, including XGBoost, Random Forest, and Logistic Regression. The dataset used for training and prediction is from the **sgpjesus/bank-account-fraud-dataset-neurips-2022**. XGBoost was found to provide the best performance in fraud detection. The project is deployed on **AWS**, and the backend is powered by **Python (Flask)**, while the frontend is built using **ReactJS**. The system also integrates **Firebase** for secure user authentication.
 
-DB : SQLite if needed.
+### Objective
 
-Cloud : AWS for hosting the backend 
+The goal of this project is to build a scalable fraud detection system that can accurately predict whether a bank transaction is fraudulent or not, using machine learning models trained on a large dataset. By automating the fraud detection process, the system aims to minimize losses caused by fraudulent transactions and enhance the overall security of banking platforms.
 
-## Objective
+## Technologies
 
-The objective of the Enterprise Expense Fraud Detection System is to automatically detect and flag suspicious or fraudulent expense claims, reducing manual review efforts while ensuring compliance with company policies. This improves efficiency and transparency in expense management.
+- **Frontend**: ReactJS
+- **Backend**: Python (Flask)
+- **Authentication**: Firebase
+- **Machine Learning Models**: XGBoost, Random Forest, Logistic Regression
+- **Deployment**: AWS
 
-## Problem Statement
+## Dataset
 
-Manual reviews of expense claims are time-consuming and prone to errors, posing a major challenge for companies in identifying fraudulent claims. This leads to inefficiencies, delays in processing legitimate claims, and financial losses. An automated system is needed to reduce fraud risks, streamline the review process, and accurately identify suspicious spending.
+The dataset used is the **Bank Account Fraud Dataset** from the NeurIPS 2022 competition. It contains 1,000,000 entries with 32 features. The goal is to predict whether a transaction is fraudulent (`fraud_bool`). Below are the descriptions of the dataset attributes:
 
-## Description
+### Attributes:
 
-The Enterprise Expense Fraud Detection System project aims to help businesses automatically identify potentially fraudulent expense claims. By analyzing expense reports for unusual patterns or policy violations, finance teams can detect potential fraud. This system accelerates the approval process, enhances the accuracy of fraud detection, and reduces the manual effort required to review each claim.
+- **fraud_bool**: (Target) Indicates if the transaction is fraudulent (1) or not (0).
+- **income**: Customer's income (float).
+- **name_email_similarity**: Similarity score between the customer's name and email (float).
+- **prev_address_months_count**: Number of months the customer has lived at their previous address (integer).
+- **current_address_months_count**: Number of months the customer has lived at their current address (integer).
+- **customer_age**: Age of the customer (integer).
+- **days_since_request**: Days since the transaction request was made (float).
+- **intended_balcon_amount**: Intended balance change requested by the customer (float).
+- **payment_type**: Type of payment method used for the transaction (categorical).
+- **zip_count_4w**: Count of transactions in the customer's zip code in the last 4 weeks (integer).
+- **velocity_6h**: Transaction frequency in the last 6 hours (float).
+- **velocity_24h**: Transaction frequency in the last 24 hours (float).
+- **velocity_4w**: Transaction frequency in the last 4 weeks (float).
+- **bank_branch_count_8w**: Number of visits to bank branches in the last 8 weeks (integer).
+- **date_of_birth_distinct_emails_4w**: Number of distinct emails associated with the customer's date of birth in the last 4 weeks (integer).
+- **employment_status**: Employment status of the customer (categorical).
+- **credit_risk_score**: Customer's credit risk score (integer).
+- **email_is_free**: Whether the customer's email is from a free provider (1) or not (0).
+- **housing_status**: Housing status of the customer (categorical).
+- **phone_home_valid**: Whether the customer's home phone number is valid (1) or not (0).
+- **phone_mobile_valid**: Whether the customer's mobile phone number is valid (1) or not (0).
+- **bank_months_count**: Number of months the customer has been with their bank (integer).
+- **has_other_cards**: Whether the customer has other cards (1) or not (0).
+- **proposed_credit_limit**: The proposed credit limit for the customer (float).
+- **foreign_request**: Whether the request is from a foreign country (1) or not (0).
+- **source**: The source of the request (e.g., INTERNET) (categorical).
+- **session_length_in_minutes**: Duration of the session in minutes (float).
+- **device_os**: Operating system of the device used (categorical).
+- **keep_alive_session**: Whether the session is kept alive (1) or not (0).
+- **device_distinct_emails_8w**: Number of distinct emails associated with the device in the last 8 weeks (integer).
+- **device_fraud_count**: Number of fraudulent transactions detected for the device (integer).
+- **month**: Month of the transaction (integer).
 
-## Use cases persona
+## Training & Models
 
-### Harsha – Finance Manager
+The following models were trained on the dataset:
 
-•	**Role:** Harsha is responsible for reviewing and approving employee expense reports at his company.
+1. **XGBoost**: Achieved the best performance in fraud detection.
+2. **Random Forest**: Another strong model but with slightly lower accuracy than XGBoost.
+3. **Logistic Regression**: A simpler model that performed adequately but less accurately than XGBoost.
 
-•	**Challenges:** He finds it hard to manually review every expense report, which takes a lot of time and effort. He is worried about missing potential fraudulent claims.
- 
-•	**Goals:** Harsha wants an easy way to identify suspicious claims so he can focus only on the high-risk ones and make quicker decisions.
- 
-•	**Interaction:** Harsha logs into the system to review flagged claims. The system gives him clear reasons for flags, allowing him to approve or reject claims faster and with more confidence.
- 
-### Abhinav – Employee
+The models were evaluated based on metrics like accuracy, precision, recall, and F1-score.
 
-•	**Role:** Abhinav regularly submits expense reports for his business travel and client meetings.
- 
-•	**Challenges:** He feels frustrated when his valid claims get delayed or flagged without clear reasons. He also wants a simpler process to submit his reports.
- 
-•	**Goals:** Abhinav wants quick and transparent processing of his claims and clear communication when there’s an issue with any of them.
- 
-•	**Interaction:** Abhinav submits his expenses through the system and gets notifications if a claim is flagged. He can then see why and respond with additional information if needed.
+## Deployment
 
-## Block Diagram
+The project is deployed on **AWS**. The machine learning model is hosted via a **Python Flask API**, which serves predictions to the ReactJS frontend. **Firebase authentication** ensures secure login and user management.
 
-![BlockDiagram](https://github.com/user-attachments/assets/453ec19b-a564-4d76-ab3c-9b3a5a01eb31)
+### Public IPs:
 
+- **Primary (Client Side) Website**: [http://3.22.68.191/](http://3.22.68.191/)
+- **Backend (Flask Server)**: [http://3.145.167.93:3000/](http://3.145.167.93:3000/)
 
-
-
+Ensure that these links are correctly used for accessing the frontend and the backend of the system.
