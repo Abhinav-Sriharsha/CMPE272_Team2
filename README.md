@@ -128,7 +128,7 @@ Ensure you have the following installed on your machine:
    ```bash
    npm run dev
    
-4. ** Access the website locally**
+4. **Access the website locally**
    Open your browser and navigate to the URL displayed in the terminal (typically http://localhost:3000).
 
 **Additional Instructions :**
