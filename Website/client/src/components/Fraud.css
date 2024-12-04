@@ -1,0 +1,130 @@
+/* Predict Fraud Page Form Styles */
+
+/* Container for the fraud prediction form */
+.predict-fraud-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #212121;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Title of the form */
+.predict-fraud-container h2 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Label for the form fields */
+.predict-fraud-container label {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Input fields styling */
+.predict-fraud-container input,
+.predict-fraud-container select,
+.predict-fraud-container textarea {
+  width: 90%;
+  padding: 12px 18px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus effect for input fields */
+.predict-fraud-container input:focus,
+.predict-fraud-container select:focus,
+.predict-fraud-container textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Textarea specific styling */
+.predict-fraud-container textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Submit button styling */
+.predict-fraud-container button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+/* Hover effect for the submit button */
+.predict-fraud-container button[type="submit"]:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Cancel button styling */
+.predict-fraud-container button[type="button"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #f44336;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Hover effect for the cancel button */
+.predict-fraud-container button[type="button"]:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Additional styling for smaller screens */
+@media (max-width: 480px) {
+  .predict-fraud-container {
+    padding: 20px;
+  }
+
+  .predict-fraud-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .predict-fraud-container input,
+  .predict-fraud-container select,
+  .predict-fraud-container textarea,
+  .predict-fraud-container button[type="submit"],
+  .predict-fraud-container button[type="button"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

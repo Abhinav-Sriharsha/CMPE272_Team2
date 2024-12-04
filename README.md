@@ -72,6 +72,7 @@ The models were evaluated based on metrics like accuracy, precision, recall, and
 ## Deployment
 
 The project is deployed on **AWS**. The machine learning model is hosted via a **Python Flask API**, which serves predictions to the ReactJS frontend. **Firebase authentication** ensures secure login and user management.
+<<<<<<< HEAD
 
 ### Public IPs:
 
@@ -81,6 +82,7 @@ The project is deployed on **AWS**. The machine learning model is hosted via a *
 Ensure that these links are correctly used for accessing the frontend and the backend of the system.
 
 ![Architecture Diagram](architecture_diagram.png)
+<<<<<<< HEAD
 
 ## Accessing the Website
 
@@ -132,3 +134,7 @@ Ensure you have the following installed on your machine:
 ** Additional Instructions **
 	•	Ensure the backend server is running before starting the frontend.
 	•	If you encounter any issues, check the logs for detailed error messages.
+=======
+=======
+>>>>>>> 5643179 (Initial commit for fraud detection project)
+>>>>>>> 6079e30 (Initial commit for fraud detection project)
