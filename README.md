@@ -1,6 +1,5 @@
-# Bank Account Fraud Detection
 
-## Project Title: Bank Account Fraud Detection System
+## Project Title: Fraud Detection System
 
 ### Project Description
 
