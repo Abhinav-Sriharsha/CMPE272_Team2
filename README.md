@@ -7,6 +7,9 @@ This project aims to build a **Bank Account Fraud Detection System** that utiliz
 
 The system uses state-of-the-art machine learning models, including XGBoost, Random Forest, and Logistic Regression. The dataset used for training and prediction is from the **sgpjesus/bank-account-fraud-dataset-neurips-2022**. XGBoost was found to provide the best performance in fraud detection. The project is deployed on **AWS**, and the backend is powered by **Python (Flask)**, while the frontend is built using **ReactJS**. The system also integrates **Firebase** for secure user authentication.
 
+Project Report
+[View the Project Report](https://github.com/Abhinav-Sriharsha/Fraud_Detection_System/blob/7394b3fe1221cb97159b754d66fa73e316f4a29b/Fraud_Detection_System.pdf)
+
 ### Objective
 
 The goal of this project is to build a scalable fraud detection system that can accurately predict whether a bank transaction is fraudulent or not, using machine learning models trained on a large dataset. By automating the fraud detection process, the system aims to minimize losses caused by fraudulent transactions and enhance the overall security of banking platforms.
