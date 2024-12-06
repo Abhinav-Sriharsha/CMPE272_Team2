@@ -81,7 +81,7 @@ The project is deployed on **AWS**. The machine learning model is hosted via a *
 Ensure that these links are correctly used for accessing the frontend and the backend of the system.
 
 ![Architecture Diagram](architecture_diagram.png)
-<<<<<<< HEAD
+
 
 ## Accessing the Website
 
